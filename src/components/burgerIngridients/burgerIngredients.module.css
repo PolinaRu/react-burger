@@ -1,0 +1,10 @@
+.ingridients {
+}
+
+.title {
+}
+
+.components {
+  display: flex;
+  flex-wrap: wrap;
+}

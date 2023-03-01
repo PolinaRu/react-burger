@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import AppHeader from './AppHeader';
+import AppHeader from './components/appHeader/AppHeader';
+import BurgerIngredients from './components/burgerIngridients/BurgerIngredients';
 import reportWebVitals from './reportWebVitals';
+import styles from './index.module.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,6 +11,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <AppHeader />
+    <main className={ styles.main }>
+      <BurgerIngredients />
+      <BurgerIngredients />
+    </main>
   </React.StrictMode>
 );
 
